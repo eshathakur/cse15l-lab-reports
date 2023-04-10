@@ -2,7 +2,7 @@
 Here is a screenshot of what the page should look like:![Image](VScode.png)
 You should then be able to choose which directions you should need in order to download VScode.
 
-**Remotely Connecting** I have a mac which already comes with git downloaded. In order to use the Bash in VScode for mac:
+**Remotely Connecting:** I have a mac which already comes with git downloaded. In order to use the Bash in VScode for mac:
  <br> 1.Open VScode and open the terminal
  <br> 2.Open the command pallete using command + shift + P
  <br> 3.Type "select defualt profile"
