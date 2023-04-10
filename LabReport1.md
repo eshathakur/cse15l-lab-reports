@@ -27,3 +27,6 @@ For the username enter what comes before the '@' in your UCSD student email, for
 
 
 
+**Trying Some Commands:** here are some commands you can try out for fun, try and make note of what they do : 
+
+
