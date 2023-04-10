@@ -30,7 +30,7 @@ For the username enter what comes before the '@' in your UCSD student email, for
 **Trying Some Commands:** here are some commands you can try out for fun, try and make note of what they do : 
 <br> ![Image](commands.png)
 <br> For example, I ran the ls -lat command and this is what it looked like for me: 
-<br> ![Image](ls:exit.png)
+<br> ![Image](lsandexit.png)
 <br> The ls command lists the names of the files in thr working directory.
 <br> You can also see at the bottom, to log out of the remote server in your terminal you run the command exit 
 
