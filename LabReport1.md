@@ -15,10 +15,12 @@ Then, to view your course-specific CSE15L account use this link: [Link](https://
 ![Image](AcctPage.png)
 For the username enter what comes before the '@' in your UCSD student email, for example my email is esthakur@ucsd.edu, my username is esthakur
 <br> For the password enter in your student PID (it starts with an A). Here is a link to reset your password, it includes images and directions that are very thorough: [Link](https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view)
-
-
-<br> Next, to use ssh in VScode open the terminal and type in this command: ssh cs15lsp23zz@ieng6.ucsd.edu
-the 'zz' should be replaced by the 2 specific letters assigned to you. 
+<br> You should set your password to something you will remember as you will have to enter it to log into the terminal.
+<br> Next, to use ssh in VScode open the terminal and type in this command: ssh cs15lsp23zz@ieng6.ucsd.edu   and press enter
+<br> the 'zz' should be replaced by the 2 specific letters assigned to you
+<br>Since this will be the first time you are connecting to this server you will be prompted with a message asking if you want to continue connecting (shown in the screenshot below), type yes then press enter.
+<br>It will then prompt you for your password, type it in then press enter, notice that it won't show up on the screen when you type it. In the screenshot below I had 2 failed attempts and that is okay. 
+<br> ![Image]()
 
 
 
