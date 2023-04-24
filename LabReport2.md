@@ -14,11 +14,37 @@ assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
 ```
 * The Symptom as the output of running the tests:
 <br> Test using input2 (failed test)
-<br> ![Image](reverseTestErrors)
+<br> ![Image](reverseTestErrors.png)
 <br> Test using input1 (passed test)
-<br> ![Image](passedTest)
+<br> ![Image](passedTest.png)
 
-* The bug: 
+* The bug:
 <br> Code Before
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
 
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+
+```
 <br> Code After
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+
+    //create a deep copy of arr
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[i];
+    }
+
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+ <br> Needed to create a deep copy of arr, this fixes the issue because before implementing the deep copy arr[i] (in the foor loop) was getting assigned the incorrect values as newArray had the correct length but no values 
