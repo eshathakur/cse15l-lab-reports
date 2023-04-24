@@ -50,3 +50,4 @@ static int[] reversed(int[] arr) {
  <br> Needed to create a deep copy of arr. 
  <br>This fixes the issue because before implementing the deep copy, in the for loop, arr was getting assigned the incorrect values as newArray was initialized with the correct length but no values, each element was then getting stored with the default value of 0 for an empty array. 
  <br>That is why the error shows it was expecting the value for 4 but was getting 0.
+ <br> Creating a deep copy of arr assigns all values of arr to newArray at the correct index, so you can then effectively reverse the elements of arr using newArray.
