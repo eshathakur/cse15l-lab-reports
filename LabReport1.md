@@ -32,7 +32,11 @@ For the username enter what comes before the '@' in your UCSD student email, for
 
 
 **Trying Some Commands:** here are some commands you can try out for fun, try and make note of what they do : 
-<br> ![Image](commands.png)
+1. ```cd ~```
+2. ```cd```
+3. ```ls -lat```
+4. ```la -a```
+
 <br> For example, I ran the ```ls -lat``` command and this is what it looked like for me: 
 <br> ![Image](lsandexit.png)
 <br> The ```ls``` command lists the names of the files in the working directory.
