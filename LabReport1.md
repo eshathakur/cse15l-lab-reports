@@ -4,15 +4,16 @@ You should then be able to choose which directions you should need in order to d
 
 **Remotely Connecting:** I have a mac which already comes with git downloaded. With a mac, you should be able to work normally in the ```zsh``` terminal.
 
-
+possibly delete:
 In order to use the Bash in VScode for mac:
- <br> 1.Open VScode and open the terminal
- <br> 2.Open the command pallete using command + shift + P
- <br> 3.Type "select defualt profile"
- <br> 4.Select Bash from the options (should be the first one to pop up)
- <br> 5.Click the + icon in the terminal window
+1. Open VScode and open the terminal
+2. Open the command pallete using command + shift + P
+3. Type 'select default profile'
+4. Select Bash from the options (should be the first one to pop up)
+5. Click the + icon in the terminal window
 The new terminal is now a Git Bash terminal, the right hand side of the terminal should look like this: 
  <br> ![Image](Bash.png)
+ <br> possible delete is done
 
 Then, to view your course-specific CSE15L account use this link: [ViewAccount](https://sdacs.ucsd.edu/~icc/index.php) the page should look like this: 
 ![Image](AcctPage.png)
@@ -20,7 +21,7 @@ For the username enter what comes before the '@' in your UCSD student email, for
 <br> For the password enter in your student PID (it starts with an A). Here is a link to a step-by-step tutorial to reset your password, it includes images and directions that are very thorough: [PasswordReset](https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view)
 <br> You should set your password to something you will remember as you will have to enter it to log into the terminal.
 <br>
-<br> Next, to use ssh in VScode open the terminal and type in this command: ssh cs15lsp23zz@ieng6.ucsd.edu  and press enter
+<br> Next, to use ssh in VScode open the terminal and type in this command: ```ssh cs15lsp23zz@ieng6.ucsd.edu```  and press enter
 <br> the 'zz' should be replaced by the 2 specific letters assigned to you
 <br>
 <br>Since this will be the first time you are connecting to this server you will be prompted with a message asking if you want to continue connecting (shown in the screenshot below), type yes then press enter.
@@ -32,8 +33,8 @@ For the username enter what comes before the '@' in your UCSD student email, for
 
 **Trying Some Commands:** here are some commands you can try out for fun, try and make note of what they do : 
 <br> ![Image](commands.png)
-<br> For example, I ran the ls -lat command and this is what it looked like for me: 
+<br> For example, I ran the ```ls -lat``` command and this is what it looked like for me: 
 <br> ![Image](lsandexit.png)
-<br> The ls command lists the names of the files in the working directory.
+<br> The ```ls``` command lists the names of the files in the working directory.
 <br> You can also see at the bottom, to log out of the remote server in your terminal you run the command exit 
 
