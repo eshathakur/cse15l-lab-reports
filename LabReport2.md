@@ -14,7 +14,7 @@ assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
 ```
 * The Symptom as the output of running the tests:
 <br> Test using input2 (failed test)
-<br> ![Image](reverseTestErrors.png)
+<br> ![Image](failedTest.png)
 <br> Test using input1 (passed test)
 <br> ![Image](passedTest.png)
 
@@ -47,4 +47,6 @@ static int[] reversed(int[] arr) {
     return arr;
   }
 ```
- <br> Needed to create a deep copy of arr, this fixes the issue because before implementing the deep copy arr[i] (in the foor loop) was getting assigned the incorrect values as newArray had the correct length but no values 
+ <br> Needed to create a deep copy of arr. 
+ <br>This fixes the issue because before implementing the deep copy, in the for loop, arr was getting assigned the incorrect values as newArray was initialized with the correct length but no values, each element was then getting stored with the default value of 0 for an empty array. 
+ <br>That is why the error shows it was expecting the value for 4 but was getting 0.
