@@ -2,7 +2,7 @@
 Here is a screenshot of what the page should look like:![Image](VScode.png)
 You should then be able to choose which directions you should need in order to download VScode.
 
-**Remotely Connecting:** I have a mac which already comes with git downloaded. With a mac, you should be able to work normally in the ```zsh``` terminal.
+**Remotely Connecting:** I have a mac which already comes with git downloaded. With a mac, you don't need to change the terminal to Bash, you should be able to work normally in the ```zsh``` terminal.
 
 <br>Then, to view your course-specific CSE15L account use this link: [ViewAccount](https://sdacs.ucsd.edu/~icc/index.php) the page should look like this: 
 ![Image](AcctPage.png)
