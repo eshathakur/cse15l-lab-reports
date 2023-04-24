@@ -10,7 +10,8 @@ For the username enter what comes before the '@' in your UCSD student email, for
 <br> For the password enter in your student PID (it starts with an A). Here is a link to a step-by-step tutorial to reset your password, it includes images and directions that are very thorough: [PasswordReset](https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view)
 <br> You should set your password to something you will remember as you will have to enter it to log into the terminal.
 <br>
-<br> Next, to use ssh in VScode open the terminal and type in this command: ```ssh cs15lsp23zz@ieng6.ucsd.edu```  and press enter
+<br> Next, to use ssh in VScode open the terminal and type in this command:
+<br> ```ssh cs15lsp23zz@ieng6.ucsd.edu```  and press enter
 <br> the 'zz' should be replaced by the 2 specific letters assigned to you
 <br>
 <br>Since this will be the first time you are connecting to this server you will be prompted with a message asking if you want to continue connecting (shown in the screenshot below), type yes then press enter.
@@ -21,11 +22,11 @@ For the username enter what comes before the '@' in your UCSD student email, for
 
 
 **Trying Some Commands:** here are some commands you can try out for fun, try and make note of what they do : 
-1. ```cd ~``` - allows you to move in between dirctories, takes an argument after ~ (the folder you want to move to)
-2. ```cd``` -  allows you to change in between directories, if no argument given it will change to the home directory
-3. ```ls``` - prints out files of curent directory
-4. ```ls -lat``` - lists all files or directories including the hidden files and directories, in a long list format, sorted by modification time
-5. ```la -a``` - lists all files or directories including the hidden files and directories
+1. ```cd ~``` : allows you to move in between dirctories, takes an argument after ~ (the folder you want to move to)
+2. ```cd``` :  allows you to change in between directories, if no argument given it will change to the home directory
+3. ```ls``` : prints out files of curent directory
+4. ```ls -lat``` : lists all files or directories including the hidden files and directories, in a long list format, sorted by modification time
+5. ```la -a``` : lists all files or directories including the hidden files and directories
 
 <br> For example, I ran the ```ls -lat``` command and then the ```la -a``` and this is what it looked like for me: 
 <br> ![Image](lsandexit.png)
