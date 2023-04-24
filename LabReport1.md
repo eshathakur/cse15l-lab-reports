@@ -32,13 +32,14 @@ For the username enter what comes before the '@' in your UCSD student email, for
 
 
 **Trying Some Commands:** here are some commands you can try out for fun, try and make note of what they do : 
-1. ```cd ~```
-2. ```cd```
-3. ```ls -lat```
-4. ```la -a```
+1. ```cd ~``` - allows you to move in between dirctories, takes an argument after ~ (the folder you want to move to)
+2. ```cd``` -  allows you to change in between directories, if no argument given it will change to the home directory
+3. ```ls``` - prints out files of curent directory
+4. ```ls -lat``` - lists all files or directories including the hidden files and directories, in a long list format, sorted by modification time
+5. ```la -a``` - lists all files or directories including the hidden files and directories
 
-<br> For example, I ran the ```ls -lat``` command and this is what it looked like for me: 
+<br> For example, I ran the ```ls -lat``` command and then the ```la -a``` and this is what it looked like for me: 
 <br> ![Image](lsandexit.png)
-<br> The ```ls``` command lists the names of the files in the working directory.
+<br> Those two commands both printed out all the current files including the hidden ones from the current directory. You can see that the ```ls -lat``` command sorted by modification time, where the time when I most recently worked on it is at the top. You can see that the ```ls -lat``` command also uses a long list format. You can also see that all the files listed under the ```la -a``` command are also listed under the ```ls -lat``` command.
 <br> You can also see at the bottom, to log out of the remote server in your terminal you run the command exit 
 
