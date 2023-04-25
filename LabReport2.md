@@ -110,6 +110,5 @@ static int[] reversed(int[] arr) {
  <br> Creating a deep copy of arr assigns all values of arr to newArray at the correct index, so you can then effectively reverse the elements of arr using newArray.
  
  
- Part 3
- ======
+ ## Part 3
  <br> Something I learned in lab from week 2 was how to use GitHub desktop to clone a repository. I have had experience with github in the past but without a proper tutorial it can become very confusing. Cloning is a very useful tool to track and record the changes made to a file. I found the tutorial to be very easy to follow. 
