@@ -40,7 +40,22 @@ class StringServer {
 }
 ```
 
+2 screenshots using /add-message: 
 
+1. 
+<br> ![Image](first.png)
+* Methods called in my code: this line ``` Server.start(port, new Handler()); ``` in the main method of StringServer.java calls the main method in the file Server.java which calls the method handleRequest in StringServer.java due to the interface URLHandler in Server.java. In the call to ```handleRequest()``` a URI type called url is passed through.
+<br>In the Handler method, there are lines that use the ```getPath()``` and ```getQuery()``` methods, there is also a line that uses ```split() ``` method to split the query by the = sign and creates an array of those strings called parameters .  
+
+* Relevant arguements to those methods, and the values of any relevant fields of the class: ``` Server.start(port, new Handler()); ``` passes through 2 arguments; a integer type called port and a URLHandler type. Port is an Integer value that has to be between 1024 to 49151, port is the users input, it is args[0] from the main method in StringServer.java. Like stated above, ```handleRequest()``` has an argument of URI value called url, in this screenshot the url is the string "/add-message?s=Hi" . The value path, which is a String type, never changes in this program it is always "/add-message" , unless the user enters it in wrong. The String value of parameter[0] also doesn't change, it is always "s" . 
+
+* How do the values of any relevant fields of the class change from this specific request: The value of parameter[1] is what changes in this program and that is what is printed out onto the server. I used a String called words, each time the user changes the query and parameter[1] is updated, it is added to the String words which is returned, formatted, and printed on the server.
+
+2. 
+<br> ![Image](second.png)
+* The same methods are called as above.
+* The methods have the same relevant arguments and values as above.
+* The same values got changed as above, in this screenshot parameter[1] is changed 4 times, from "hi" to "hello", "hello" to "how are you", "how are you" to "my name is esha", and from "my name is esha" to "goodbye" .
 
 # Part 2
 I chose the reversed method from lab3 as my bug for this report.
