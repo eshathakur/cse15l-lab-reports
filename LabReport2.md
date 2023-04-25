@@ -1,3 +1,46 @@
+# Part 1
+This is the code for my StringServer.java file :
+```
+import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.zip.ZipOutputStream;
+
+class Handler implements URLHandler {
+    //ArrayList<String> words = new ArrayList<>();
+    String words = "";
+    
+    public String handleRequest(URI url){
+        
+        if(url.getPath().equals("/")){
+            return "Change path and query to /add-message?s=<string> to print out a string";
+        }
+        else if(url.getPath().equals("/add-message")){
+            System.out.println("Path: " + url.getPath());
+            System.out.println("URL: " + url);
+            String[] parameters = url.getQuery().split("=");
+            words += parameters[1] + "\n";
+            return words;
+        }
+        else{ return "404 Not Found!";}
+    }
+}
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
+
+
 
 # Part 2
 I chose the reversed method from lab3 as my bug for this report.
