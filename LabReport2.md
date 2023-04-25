@@ -41,8 +41,7 @@ class StringServer {
 ```
 
 2 screenshots using /add-message: 
-
-1. 
+ 
 <br> ![Image](first.png)
 * Methods called in my code: this line ``` Server.start(port, new Handler()); ``` in the main method of StringServer.java calls the main method in the file Server.java which calls the method handleRequest in StringServer.java due to the interface URLHandler in Server.java. In the call to ```handleRequest()``` a URI type called url is passed through.
 <br>In the Handler method, there are lines that use the ```getPath()``` and ```getQuery()``` methods, there is also a line that uses ```split() ``` method to split the query by the = sign and creates an array of those strings called parameters .  
@@ -51,7 +50,6 @@ class StringServer {
 
 * How do the values of any relevant fields of the class change from this specific request: The value of parameter[1] is what changes in this program and that is what is printed out onto the server. I used a String called words, each time the user changes the query and parameter[1] is updated, it is added to the String words which is returned, formatted, and printed on the server.
 
-2. 
 <br> ![Image](second.png)
 * The same methods are called as above.
 * The methods have the same relevant arguments and values as above.
