@@ -1,6 +1,6 @@
 I used chatGPT to research 4 different command line options for the command `find`, here is the link: [ChatGPT](https://chat.openai.com)
 <br>
-<br>1. `-type` : this option searches for specific files, for example, `-type d` would search only for directories, while `-type f` would search for regular files. 
+<br>1. `-type` : this option searches for specific files, for example, `-type d` would search only for directories, while `-type f` would search for regular files. This option is useful because it narrows down the general `find` command to a certain type and you can then perform commands only on that certain type.
 <br>I show how to use `-type d` below: 
 ```
 find stringsearch-data/technical -type d
@@ -51,7 +51,7 @@ stringsearch-data/technical/biomed/1471-2369-3-9.txt
 stringsearch-data/technical/biomed/bcr620.txt
 ```
 
-<br>2. `-size` : this option allows you to search for files based on their size
+<br>2. `-size` : this option allows you to search for files based on their size. This option is useful because it allows you to search for files based on a characteristic. It can help with things like file cleanup or optimizing storage space by finding files that are too large or too small like empty files.
 <br> For example, I searched for files less than 1 megabyte. All files in this directory were less than 1 megabyte so I shortened the output:
 ```
 find stringsearch-data/technical -size -1M
@@ -97,7 +97,7 @@ find stringsearch-data/technical -size +1M
 
 ```
 
-<br>3. `-iname` : this option is very similar to name, except it performs a case-insensitive search. 
+<br>3. `-iname` : this option is very similar to name, except it performs a case-insensitive search. This option is useful because it saves you from having to remember the exact case of filenames and your searches will be more consistent across different platforms and filesystems.
 <br> For example, `-iname "*.TXT"` and `-iname "*.txt"` will find the same files.
 <br> (again, I shortened the output as all files in this directory were .txt files)
 ```
@@ -164,7 +164,7 @@ stringsearch-data/technical/911report/chapter-10.txt
 stringsearch-data/technical/911report/chapter-11.txt
 ```
 
-<br>4. `-user` : this option allows you to search for a file owned by a specific user.
+<br>4. `-user` : this option allows you to search for a file owned by a specific user. This option is most useful in multi-user environments because it can find and filter files owned by a specific user.
 <br> For example, since I cloned the directory under my user EshaThakur on vscode on my mac, all the files were owned by me. So when I did this command, all files under the ./techincal directory were in the outout (which I shortened).
 ```
 EshaThakur$ find stringsearch-data/technical -user EshaThakur
