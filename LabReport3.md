@@ -99,7 +99,7 @@ find stringsearch-data/technical -size +1M
 
 <br>3. `-iname` : this option is very similar to name, except it performs a case-insensitive search. 
 <br> For example, `-iname "*.TXT"` and `-iname "*.txt"` will find the same files.
-<br> (again, I shortened the input as all files in this directory were .txt files)
+<br> (again, I shortened the output as all files in this directory were .txt files)
 ```
 find stringsearch-data/technical -iname "*.TXT"
 
