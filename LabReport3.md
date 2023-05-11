@@ -163,3 +163,43 @@ stringsearch-data/technical/911report/chapter-12.txt
 stringsearch-data/technical/911report/chapter-10.txt
 stringsearch-data/technical/911report/chapter-11.txt
 ```
+
+<br>4. `-user` : this option allows you to search for a file owned by a specific user.
+<br> For example, since I cloned the directory under my user EshaThakur on vscode on my mac, all the files were owned by me. So when I did this command, all files under the ./techincal directory were in the outout (which I shortened).
+```
+EshaThakur$ find stringsearch-data/technical -user EshaThakur
+
+stringsearch-data/technical/biomed/1471-2164-2-4.txt
+stringsearch-data/technical/biomed/1471-2210-1-3.txt
+stringsearch-data/technical/biomed/1476-9433-1-3.txt
+stringsearch-data/technical/biomed/1471-2334-1-13.txt
+stringsearch-data/technical/biomed/1471-2407-3-16.txt
+stringsearch-data/technical/biomed/1471-2164-4-2.txt
+stringsearch-data/technical/biomed/cvm-2-4-187.txt
+stringsearch-data/technical/biomed/1471-2105-3-4.txt
+stringsearch-data/technical/biomed/1471-2121-3-21.txt
+stringsearch-data/technical/biomed/1471-2202-4-2.txt
+stringsearch-data/technical/biomed/1471-2172-3-9.txt
+stringsearch-data/technical/biomed/gb-2001-2-3-research0007.txt
+stringsearch-data/technical/biomed/1471-2199-2-6.txt
+stringsearch-data/technical/biomed/bcr567.txt
+stringsearch-data/technical/biomed/gb-2002-3-10-research0055.txt
+stringsearch-data/technical/biomed/1471-2121-2-3.txt
+stringsearch-data/technical/biomed/1471-213X-1-11.txt
+stringsearch-data/technical/biomed/1472-684X-1-5.txt
+stringsearch-data/technical/biomed/1476-4598-1-6.txt
+stringsearch-data/technical/911report
+stringsearch-data/technical/911report/chapter-13.4.txt
+stringsearch-data/technical/911report/chapter-13.5.txt
+stringsearch-data/technical/911report/chapter-13.1.txt
+stringsearch-data/technical/911report/chapter-13.2.txt
+stringsearch-data/technical/911report/chapter-13.3.txt
+stringsearch-data/technical/911report/chapter-3.txt
+stringsearch-data/technical/911report/chapter-2.txt
+```
+<br> When I searched for any other user this is the output: 
+```
+EshaThakur$ find stringsearch-data/technical -user JoePolitz
+
+find: -user: JoePolitz: no such user
+```
