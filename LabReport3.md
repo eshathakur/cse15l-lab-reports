@@ -3,25 +3,8 @@ I used chatGPT to research 4 different command line options for the command `fin
 <br>1. `-type` : this option searches for specific files, for example, `-type d` would search only for directories, while `-type f` would search for regular files. 
 <br>I show how to use `-type d` below: 
 ```
-find stringsearch-data -type d
+find stringsearch-data/technical -type d
 
-stringsearch-data
-stringsearch-data/.git
-stringsearch-data/.git/objects
-stringsearch-data/.git/objects/pack
-stringsearch-data/.git/objects/info
-stringsearch-data/.git/info
-stringsearch-data/.git/logs
-stringsearch-data/.git/logs/refs
-stringsearch-data/.git/logs/refs/heads
-stringsearch-data/.git/logs/refs/remotes
-stringsearch-data/.git/logs/refs/remotes/origin
-stringsearch-data/.git/hooks
-stringsearch-data/.git/refs
-stringsearch-data/.git/refs/heads
-stringsearch-data/.git/refs/tags
-stringsearch-data/.git/refs/remotes
-stringsearch-data/.git/refs/remotes/origin
 stringsearch-data/technical
 stringsearch-data/technical/government
 stringsearch-data/technical/government/About_LSC
@@ -69,7 +52,7 @@ stringsearch-data/technical/biomed/bcr620.txt
 ```
 
 <br>2. `-size` : this option allows you to search for files based on their size
-<br> For example, I searched for files less than 1 megabyte. All fules in this directory were less than 1 megabyte so I shortened the output:
+<br> For example, I searched for files less than 1 megabyte. All files in this directory were less than 1 megabyte so I shortened the output:
 ```
 find stringsearch-data/technical -size -1M
 
@@ -112,4 +95,71 @@ stringsearch-data/technical/biomed/cc991.txt
 ```
 find stringsearch-data/technical -size +1M
 
+```
+
+<br>3. `-iname` : this option is very similar to name, except it performs a case-insensitive search. 
+<br> For example, `-iname "*.TXT"` and `-iname "*.txt"` will find the same files.
+<br> (again, I shortened the input as all files in this directory were .txt files)
+```
+find stringsearch-data/technical -iname "*.TXT"
+
+stringsearch-data/technical/biomed/1471-2202-4-2.txt
+stringsearch-data/technical/biomed/1471-2172-3-9.txt
+stringsearch-data/technical/biomed/gb-2001-2-3-research0007.txt
+stringsearch-data/technical/biomed/1471-2199-2-6.txt
+stringsearch-data/technical/biomed/bcr567.txt
+stringsearch-data/technical/biomed/gb-2002-3-10-research0055.txt
+stringsearch-data/technical/biomed/1471-2121-2-3.txt
+stringsearch-data/technical/biomed/1471-213X-1-11.txt
+stringsearch-data/technical/biomed/1472-684X-1-5.txt
+stringsearch-data/technical/biomed/1476-4598-1-6.txt
+stringsearch-data/technical/911report/chapter-13.4.txt
+stringsearch-data/technical/911report/chapter-13.5.txt
+stringsearch-data/technical/911report/chapter-13.1.txt
+stringsearch-data/technical/911report/chapter-13.2.txt
+stringsearch-data/technical/911report/chapter-13.3.txt
+stringsearch-data/technical/911report/chapter-3.txt
+stringsearch-data/technical/911report/chapter-2.txt
+stringsearch-data/technical/911report/chapter-1.txt
+stringsearch-data/technical/911report/chapter-5.txt
+stringsearch-data/technical/911report/chapter-6.txt
+stringsearch-data/technical/911report/chapter-7.txt
+stringsearch-data/technical/911report/chapter-9.txt
+stringsearch-data/technical/911report/chapter-8.txt
+stringsearch-data/technical/911report/preface.txt
+stringsearch-data/technical/911report/chapter-12.txt
+stringsearch-data/technical/911report/chapter-10.txt
+stringsearch-data/technical/911report/chapter-11.txt
+```
+
+```
+find stringsearch-data/technical -iname "*.txt"
+
+stringsearch-data/technical/biomed/1471-2202-4-2.txt
+stringsearch-data/technical/biomed/1471-2172-3-9.txt
+stringsearch-data/technical/biomed/gb-2001-2-3-research0007.txt
+stringsearch-data/technical/biomed/1471-2199-2-6.txt
+stringsearch-data/technical/biomed/bcr567.txt
+stringsearch-data/technical/biomed/gb-2002-3-10-research0055.txt
+stringsearch-data/technical/biomed/1471-2121-2-3.txt
+stringsearch-data/technical/biomed/1471-213X-1-11.txt
+stringsearch-data/technical/biomed/1472-684X-1-5.txt
+stringsearch-data/technical/biomed/1476-4598-1-6.txt
+stringsearch-data/technical/911report/chapter-13.4.txt
+stringsearch-data/technical/911report/chapter-13.5.txt
+stringsearch-data/technical/911report/chapter-13.1.txt
+stringsearch-data/technical/911report/chapter-13.2.txt
+stringsearch-data/technical/911report/chapter-13.3.txt
+stringsearch-data/technical/911report/chapter-3.txt
+stringsearch-data/technical/911report/chapter-2.txt
+stringsearch-data/technical/911report/chapter-1.txt
+stringsearch-data/technical/911report/chapter-5.txt
+stringsearch-data/technical/911report/chapter-6.txt
+stringsearch-data/technical/911report/chapter-7.txt
+stringsearch-data/technical/911report/chapter-9.txt
+stringsearch-data/technical/911report/chapter-8.txt
+stringsearch-data/technical/911report/preface.txt
+stringsearch-data/technical/911report/chapter-12.txt
+stringsearch-data/technical/911report/chapter-10.txt
+stringsearch-data/technical/911report/chapter-11.txt
 ```
