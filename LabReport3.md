@@ -1,6 +1,6 @@
 I used chatGPT to research 4 different command line options for the command `find`, here is the link: [ChatGPT](https://chat.openai.com)
 <br>
-<br>1. `-type` : this option searches for specific files, for examples, `-type d` would search only for directories, while `-type f` would search for regular files. 
+<br>1. `-type` : this option searches for specific files, for example, `-type d` would search only for directories, while `-type f` would search for regular files. 
 <br>I show how to use `-type d` below: 
 ```
 find stringsearch-data -type d
@@ -34,7 +34,7 @@ stringsearch-data/technical/plos
 stringsearch-data/technical/biomed
 stringsearch-data/technical/911report
 ```
-<br>I show how to use `-type f` below (I shortened the output by a lot, because this command prints out everysingle file in the techincal directory which is too much to even show on an entire terminal): 
+<br>I show how to use `-type f` below (I shortened the output by a lot, because this command prints out every single file in the techincal directory which is too much to even show on an entire terminal): 
 ```
 find stringsearch-data -type f
 
@@ -66,4 +66,50 @@ stringsearch-data/technical/biomed/1471-2202-2-9.txt
 stringsearch-data/technical/biomed/cc991.txt
 stringsearch-data/technical/biomed/1471-2369-3-9.txt
 stringsearch-data/technical/biomed/bcr620.txt
+```
+
+<br>2. `-size` : this option allows you to search for files based on their size
+<br> For example, I searched for files less than 1 megabyte. All fules in this directory were less than 1 megabyte so I shortened the output:
+```
+find stringsearch-data/technical -size -1M
+
+stringsearch-data/technical/plos/pmed.0010036.txt
+stringsearch-data/technical/plos/journal.pbio.0020400.txt
+stringsearch-data/technical/plos/journal.pbio.0020401.txt
+stringsearch-data/technical/plos/pmed.0010023.txt
+stringsearch-data/technical/plos/pmed.0020123.txt
+stringsearch-data/technical/plos/pmed.0020094.txt
+stringsearch-data/technical/plos/journal.pbio.0020213.txt
+stringsearch-data/technical/plos/pmed.0020257.txt
+stringsearch-data/technical/plos/journal.pbio.0020013.txt
+stringsearch-data/technical/plos/pmed.0020055.txt
+stringsearch-data/technical/plos/pmed.0020082.txt
+stringsearch-data/technical/plos/pmed.0010021.txt
+stringsearch-data/technical/plos/pmed.0010034.txt
+stringsearch-data/technical/plos/pmed.0010008.txt
+stringsearch-data/technical/plos/pmed.0020120.txt
+stringsearch-data/technical/plos/journal.pbio.0020172.txt
+stringsearch-data/technical/plos/pmed.0020040.txt
+stringsearch-data/technical/plos/pmed.0020068.txt
+stringsearch-data/technical/plos/journal.pbio.0020012.txt
+stringsearch-data/technical/plos/pmed.0020281.txt
+stringsearch-data/technical/plos/pmed.0020242.txt
+stringsearch-data/technical/biomed
+stringsearch-data/technical/biomed/1472-6807-2-2.txt
+stringsearch-data/technical/biomed/1471-2350-4-3.txt
+stringsearch-data/technical/biomed/1471-2156-2-3.txt
+stringsearch-data/technical/biomed/1471-2156-3-11.txt
+stringsearch-data/technical/biomed/1471-2121-3-10.txt
+stringsearch-data/technical/biomed/1471-2172-3-4.txt
+stringsearch-data/technical/biomed/gb-2002-4-1-r2.txt
+stringsearch-data/technical/biomed/gb-2003-4-6-r41.txt
+stringsearch-data/technical/biomed/1471-2466-1-1.txt
+stringsearch-data/technical/biomed/1471-2199-2-10.txt
+stringsearch-data/technical/biomed/1471-2202-2-9.txt
+stringsearch-data/technical/biomed/cc991.txt
+```
+<br> In this example, I search for files greater than 1 megabyte (since all files were less than 1 megabyte there was no output):
+```
+find stringsearch-data/technical -size +1M
+
 ```
