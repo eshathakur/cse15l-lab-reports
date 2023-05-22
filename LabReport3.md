@@ -169,6 +169,10 @@ stringsearch-data/technical/911report/chapter-10.txt
 stringsearch-data/technical/911report/chapter-11.txt
 ```
 
+<br>Here is the prompt I gave to chatGPT and the output it produced for `-iname`: 
+![Image](chatGPT3.png)
+<br>I changed the output by rewriting the definiton of `-iname` in my own words and put it under the context of using it with `./technical` . 
+
 <br>4. `-user` : this option allows you to search for a file owned by a specific user. This option is most useful in multi-user environments because it can find and filter files owned by a specific user.
 <br> For example, since I cloned the directory under my user EshaThakur on vscode on my mac, all the files were owned by me. So when I did this command, all files under the ./techincal directory were in the outout (which I shortened).
 ```
@@ -211,4 +215,4 @@ find: -user: JoePolitz: no such user
 
 <br>Here is the prompt I gave to chatGPT and the output it produced for `-user`: 
 ![Image](chatGPT2.png)
-<br>I changed the output by rewriting the definitons of `-user` in my own words and put it under the context of using it with `./technical` . 
+<br>I changed the output by rewriting the definiton of `-user` in my own words and put it under the context of using it with `./technical` . 
