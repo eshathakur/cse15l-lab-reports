@@ -17,8 +17,13 @@
 <br>Summary: I changed the directory to lab7 then I ran the tests using the bash file test.sh to show that they fail.
 
 <br>**Step 7:Edit the code file `ListExamples.java` to fix the failing test**
-<br>Keys pressed: `vim<space>ListExamples.java` `/change<enter>jllxi2<escape>:wq<enter>`
-
+<br>Keys pressed: `vim<space>ListExamples.java<enter>` `/change<enter>jllxi2<escape>:wq<enter>`
+<br>![Image](step7.png)
+<br>Keys pressed: `git<space>commit<space>ListExamples.java<enter>` then to exit and save the commit `:wq<enter>` 
+<br>![Image](commit.png)
+<br>Keys pressed: `git<space>push<enter>`
+<br>![Image](push.png)
+<br> I searched for the word 'change' as there is a comment right above the index that needs to be changed that starts off with the word 'change' and then I used j to go down 1 line, then used l twice to go to the right 2 times, then when the cursor was hovering over the 1 on index1 I used x to delete the 1 and then used i to get into insert mode and then inserted 2 then pressed escape to get out of insert mode. I then did `:wq<enter>` which exits out of vim abd saves the changes made to the file. I changed the index1 to index2 on line 44 of ListExamples.java
 <br>**Step 8:Run the tests, demonstrating that they now succeed**
 
 <br>**Step 9:Commit and push the resulting change to your Github account**
