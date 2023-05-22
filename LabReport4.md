@@ -5,7 +5,7 @@
 
 
 <br>**Step 5: Clone your fork of the repository from your Github account**
-<br>Keys pressed: `git<space>clone<space><command>v`
+<br>Keys pressed: `git<space>clone<space><command>v<enter>`
 <br>I had the ssh clone url for lab7 copied to my clipboard and that is why I used `<command>v`
 <br>![Image](SSHclone.png)
 <br>![Image](step5.png)
