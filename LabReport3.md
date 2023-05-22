@@ -1,6 +1,7 @@
 I used chatGPT to research 4 different command line options for the command `find`, here is the link: [ChatGPT](https://chat.openai.com)
 <br>
 <br>1. `-type` : this option searches for specific files, for example, `-type d` would search only for directories, while `-type f` would search for regular files. This option is useful because it narrows down the general `find` command to a certain type and you can then perform commands only on that certain type.
+<br>
 <br>I show how to use `-type d` below, this searches for all the directories in `./technical`, as you can see `./government` has its own sub-directories: 
 ```
 find stringsearch-data/technical -type d
