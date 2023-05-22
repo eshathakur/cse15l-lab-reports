@@ -5,7 +5,10 @@
 
 
 <br>**Step 5: Clone your fork of the repository from your Github account**
-
+<br>Keys pressed: `git<space>clone<space><command>v`
+<br>I had the ssh clone url for lab7 copied to my clipboard and that is why I used `<command>v`
+<br>![Image](SSHclone.png)
+<br>![Image](step5.png)
 <br>**Step 6: Run the tests, demonstrating that they fail**
 
 <br>**Step 7:Edit the code file `ListExamples.java` to fix the failing test**
