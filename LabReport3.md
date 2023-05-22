@@ -99,6 +99,8 @@ find stringsearch-data/technical -size +1M
 ```
 
 <br> Here is the prompt I gave to chatGPT to gather information about the command line options `-type` and `-size`: 
+![Image](type and size pormp:output.png)
+<br> I changed the output by rewriting the definitons of `-type` and `-size` in my own words and put it under the context of using it with `./technical` . 
 
 <br>3. `-iname` : this option is very similar to name, except it performs a case-insensitive search. This option is useful because it saves you from having to remember the exact case of filenames and your searches will be more consistent across different platforms and filesystems.
 <br> For example, `-iname "*.TXT"` and `-iname "*.txt"` will find the same files.
