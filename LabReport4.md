@@ -19,7 +19,7 @@
 <br>**Step 7:Edit the code file `ListExamples.java` to fix the failing test**
 <br>Keys pressed: `vim<space>ListExamples.java<enter>` `/change<enter>jllxi2<escape>:wq<enter>`
 <br>![Image](step7.png)
-<br> Summary: I opened LisrExamples.java in vim. Then, I searched for the word 'change' as there is a comment right above the index that needs to be changed that starts off with the word 'change' and then I used j to go down 1 line, then used l twice to go to the right 2 times, then the cursor was hovering over the 1 on 'index1' I used x to delete the 1 and then used i to get into insert mode and then inserted 2 then pressed escape to get out of insert mode. I then did `:wq<enter>` which exits out of vim and saves the changes made to the file. 
+<br> Summary: I opened ListExamples.java in vim. Then, I searched for the word 'change' as there is a comment right above the index that needs to be changed that starts off with the word 'change' and then I used j to go down 1 line, then used l twice to go to the right 2 times, then the cursor was hovering over the 1 on 'index1' I used x to delete the 1 and then used i to get into insert mode and then inserted 2 then pressed escape to get out of insert mode. I then did `:wq<enter>` which exits out of vim and saves the changes made to the file. 
 <br>I changed the index1 to index2 on line 44 of ListExamples.java
 
 <br>**Step 8:Run the tests, demonstrating that they now succeed**
