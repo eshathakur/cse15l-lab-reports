@@ -25,7 +25,8 @@
 <br>![Image](push.png)
 <br> I searched for the word 'change' as there is a comment right above the index that needs to be changed that starts off with the word 'change' and then I used j to go down 1 line, then used l twice to go to the right 2 times, then when the cursor was hovering over the 1 on index1 I used x to delete the 1 and then used i to get into insert mode and then inserted 2 then pressed escape to get out of insert mode. I then did `:wq<enter>` which exits out of vim abd saves the changes made to the file. I changed the index1 to index2 on line 44 of ListExamples.java
 <br>**Step 8:Run the tests, demonstrating that they now succeed**
-
+<br>Keys pressed:`bash<space>test.sh<enter>` 
+<br>![Image](step8.png)
 <br>**Step 9:Commit and push the resulting change to your Github account**
 
 
