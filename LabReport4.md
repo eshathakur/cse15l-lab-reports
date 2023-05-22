@@ -1,4 +1,4 @@
-<br>**Step 4: Log into ieng6 ** 
+<br>**Step 4: Log into ieng6** 
 
 <br>**Step 5: Clone your fork of the repository from your Github account **
 
