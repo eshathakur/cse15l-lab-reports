@@ -208,3 +208,7 @@ EshaThakur$ find stringsearch-data/technical -user JoePolitz
 
 find: -user: JoePolitz: no such user
 ```
+
+<br>Here is the prompt I gave to chatGPT and the output it produced for `-user`: 
+![Image](chatGPT2.png)
+<br>I changed the output by rewriting the definitons of `-user` in my own words and put it under the context of using it with `./technical` . 
