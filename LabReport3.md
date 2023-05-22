@@ -1,7 +1,7 @@
 I used chatGPT to research 4 different command line options for the command `find`, here is the link: [ChatGPT](https://chat.openai.com)
 <br>
 <br>1. `-type` : this option searches for specific files, for example, `-type d` would search only for directories, while `-type f` would search for regular files. This option is useful because it narrows down the general `find` command to a certain type and you can then perform commands only on that certain type.
-<br>I show how to use `-type d` below: 
+<br>I show how to use `-type d` below, this searches for all the directories in `./technical`, as you can see `./government` has its own sub-directories: 
 ```
 find stringsearch-data/technical -type d
 
@@ -96,6 +96,8 @@ stringsearch-data/technical/biomed/cc991.txt
 find stringsearch-data/technical -size +1M
 
 ```
+
+<br> Here is the prompt I gave to chatGPT to gather information about the command line options `-type` and `-size`: 
 
 <br>3. `-iname` : this option is very similar to name, except it performs a case-insensitive search. This option is useful because it saves you from having to remember the exact case of filenames and your searches will be more consistent across different platforms and filesystems.
 <br> For example, `-iname "*.TXT"` and `-iname "*.txt"` will find the same files.
