@@ -12,8 +12,8 @@
 <br>**Step 6: Run the tests, demonstrating that they fail**
 <br>Keys pressed: `cd<space>lab7<enter>` `<command>v<enter>` `<command>v<space>ListExamplesTests` 
 <br>I had copied the `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore`commands from the week 3 page of the class website.
-<br>![Image]()
-<br>![Image]()
+<br>![Image](week3.png)
+<br>![Image](step6.png)
 
 <br>**Step 7:Edit the code file `ListExamples.java` to fix the failing test**
 
