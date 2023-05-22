@@ -33,6 +33,6 @@
 <br>![Image](commit.png)
 <br>Keys pressed: `git<space>push<enter>`
 <br>![Image](push.png)
-<br>Summary: I ran the git commit command on listExamples.java and then typed in my commit message 'changed line 44 index1 to index2' then exited and saved the message using `:wq<enter>` . The commit was succesful as the screenshot of the terminal shows. I then ran the git push command which was also succesful as the screenshot shows. Here is a screenshot of the ListExamples.java file that shows the change was succesful:
+<br>Summary: I ran the git commit command on listExamples.java and then typed in my commit message 'changed line 44 index1 to index2' then exited and saved the message using `:wq<enter>` . The commit was succesful as the screenshot of the terminal shows. I then ran the git push command which was also succesful as the screenshot shows. Here is a screenshot of my forked repository that shows the change was succesful, it states 'Esha Thakur changed line 44 index1 to index2':
 <br>![Image](success.png)
 
