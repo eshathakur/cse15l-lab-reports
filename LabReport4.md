@@ -1,4 +1,8 @@
-<br>**Step 4: Log into ieng6** 
+**Step 4: Log into ieng6**
+<br>Keys pressed: `<up><enter>`
+<br>`ssh cs15lsp23le@ieng6.ucsd.edu` command was up in my search history as I had just previously logged in to delete the existing lab7 directory, I used the up arrow key once to access this command.
+<br>![Image](step4.png)
+
 
 <br>**Step 5: Clone your fork of the repository from your Github account**
 
