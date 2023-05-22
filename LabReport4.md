@@ -1,6 +1,6 @@
 **Step 4: Log into ieng6**
 <br>Keys pressed: `<up><enter>`
-<br>`ssh cs15lsp23le@ieng6.ucsd.edu` command was up in my search history as I had just previously logged in to delete the existing lab7 directory, I used the up arrow key once to access this command.
+<br>`ssh cs15lsp23le@ieng6.ucsd.edu` command was up in my search history as I had just previously logged in to delete the existing lab7 directory.
 <br>![Image](step4.png)
 
 
