@@ -17,6 +17,7 @@
 <br>Summary: I changed the directory to lab7 then I ran the tests using the bash file test.sh to show that they fail.
 
 <br>**Step 7:Edit the code file `ListExamples.java` to fix the failing test**
+<br>Keys pressed: `vim<space>ListExamples.java` `/change<enter>jllxi2<escape>:wq<enter>`
 
 <br>**Step 8:Run the tests, demonstrating that they now succeed**
 
